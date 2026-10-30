@@ -53,7 +53,7 @@ h2.title{font-size:clamp(26px,3.2vw,36px);margin:8px 0 18px;letter-spacing:-.02e
 .info th{width:130px;text-align:left;color:var(--mute);font-weight:600;padding:10px 0;border-bottom:1px solid var(--line);vertical-align:top}
 .info td{padding:10px 0;border-bottom:1px solid var(--line)}
 /* support */
-.cards{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:34px}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,250px),1fr));gap:16px;margin-top:34px}
 .card{display:block;text-decoration:none;background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:22px 20px}
 .card:hover{border-color:var(--gold)}
 .card h3{margin:0 0 6px;font-size:17px}
@@ -79,7 +79,7 @@ radial-gradient(900px 420px at 18% 0%,#2a2470 0%,transparent 70%),linear-gradien
 color:#5d55a8;font-size:44px;font-weight:800}
 .tile b{display:block;margin-top:12px;color:#fff;font-size:15px}
 .tile:first-child{transform:translateY(-18px)}
-.glist{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,330px),1fr));gap:22px;margin-top:36px}
+.glist{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,330px),1fr));gap:22px;margin-top:36px}
 .gcard{display:flex;flex-direction:column;background:var(--panel);border:1px solid var(--line);border-radius:12px;overflow:hidden;text-decoration:none;color:inherit}
 a.gcard:hover{border-color:var(--gold)}
 .gcard .art{aspect-ratio:1024/500;background:#0b0920;position:relative}
@@ -129,7 +129,6 @@ footer{background:#0a0919;border-top:1px solid rgba(255,255,255,.06);padding:36p
 .menu{gap:18px}.menu a{font-size:14px}
 .hero .wrap{align-items:center;text-align:center;padding-bottom:40px}.cta{justify-content:center}
 .game,.about{grid-template-columns:1fr;gap:36px}
-.cards{grid-template-columns:1fr 1fr}
 section.block{padding:64px 0}
 .doc{padding:24px 18px;border-radius:8px}.doc h1{font-size:23px}
 }
@@ -137,7 +136,6 @@ section.block{padding:64px 0}
 .logo span{display:none}
 .tile,.tile .face{width:118px}.tile .face{height:118px;border-radius:26px}.tile:first-child{transform:none}
 .feats{grid-template-columns:1fr}
-.cards{grid-template-columns:1fr}
 .shots img{width:170px}
 }
 @media (max-width:600px){
