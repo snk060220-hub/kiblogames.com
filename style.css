@@ -59,6 +59,47 @@ h2.title{font-size:clamp(26px,3.2vw,36px);margin:8px 0 18px;letter-spacing:-.02e
 .card h3{margin:0 0 6px;font-size:17px}
 .card p{margin:0;color:var(--dim);font-size:14px}
 .card .go{display:block;margin-top:14px;color:var(--gold);font-size:14px;font-weight:700}
+/* 10-30 3판: the company front page */
+.chero{position:relative;overflow:hidden;padding:120px 0 104px;background:
+radial-gradient(1px 1px at 12% 22%,#fff8 50%,transparent 51%),radial-gradient(1px 1px at 28% 68%,#fff6 50%,transparent 51%),
+radial-gradient(2px 2px at 44% 30%,#fff5 50%,transparent 51%),radial-gradient(1px 1px at 63% 78%,#fff7 50%,transparent 51%),
+radial-gradient(2px 2px at 81% 18%,#fff6 50%,transparent 51%),radial-gradient(1px 1px at 90% 58%,#fff7 50%,transparent 51%),
+radial-gradient(900px 420px at 18% 0%,#2a2470 0%,transparent 70%),linear-gradient(180deg,#141038 0%,var(--bg) 100%)}
+.chero .wrap{display:grid;grid-template-columns:1.25fr 1fr;gap:48px;align-items:center}
+.chero .eyebrow{letter-spacing:.3em}
+.chero h1{font-size:clamp(32px,4.6vw,54px);line-height:1.22;letter-spacing:-.03em;margin:14px 0 18px}
+.chero h1 em{font-style:normal;color:var(--gold)}
+.chero p{margin:0;color:#d6d1f5;font-size:17.5px;max-width:540px}
+.chero .cta{justify-content:flex-start}
+.lineup{display:flex;gap:18px;justify-content:center;align-items:flex-end}
+.tile{width:150px;text-align:center;text-decoration:none;color:var(--dim);font-size:14px;font-weight:600}
+.tile .face{display:block;width:150px;height:150px;border-radius:32px;overflow:hidden;border:1px solid var(--line);background:var(--panel);box-shadow:0 18px 40px rgba(0,0,0,.45)}
+.tile .face img{width:100%;height:100%;display:block}
+.tile.next .face{display:flex;align-items:center;justify-content:center;border:2px dashed #3d3684;background:rgba(28,24,70,.45);box-shadow:none;
+color:#5d55a8;font-size:44px;font-weight:800}
+.tile b{display:block;margin-top:12px;color:#fff;font-size:15px}
+.tile:first-child{transform:translateY(-18px)}
+.glist{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,330px),1fr));gap:22px;margin-top:36px}
+.gcard{display:flex;flex-direction:column;background:var(--panel);border:1px solid var(--line);border-radius:12px;overflow:hidden;text-decoration:none;color:inherit}
+a.gcard:hover{border-color:var(--gold)}
+.gcard .art{aspect-ratio:1024/500;background:#0b0920;position:relative}
+.gcard .art img{width:100%;height:100%;object-fit:cover;display:block}
+.gcard.soon .art{display:flex;align-items:center;justify-content:center;background:repeating-linear-gradient(45deg,#15123a 0 14px,#18143f 14px 28px)}
+.gcard.soon .art span{color:#4a4392;font-size:15px;font-weight:700;letter-spacing:.3em}
+.gcard .body{padding:20px 22px 22px;display:flex;flex-direction:column;gap:6px;flex:1}
+.gcard .row{display:flex;align-items:center;gap:10px}
+.gcard .row img{width:44px;height:44px;border-radius:11px}
+.gcard h3{margin:0;font-size:19px}
+.gcard p{margin:0;color:var(--dim);font-size:15px}
+.gcard .meta{color:var(--mute);font-size:13.5px}
+.gcard .go{margin-top:auto;padding-top:10px;color:var(--gold);font-size:14px;font-weight:700}
+.st{display:inline-block;font-size:12px;font-weight:700;letter-spacing:.06em;padding:3px 9px;border-radius:3px;background:var(--gold);color:#1a1405}
+.st.soon{background:transparent;border:1px solid #4a4392;color:#9a92d8}
+.card ul{list-style:none;margin:12px 0 0;padding:0;font-size:14.5px}
+.card li{margin:5px 0}
+.card li a{color:var(--gold);text-decoration:none;font-weight:600}
+.card li a:hover{text-decoration:underline}
+.flinks .gname{color:#fff;font-weight:700;margin-right:4px}
 /* documents */
 .docwrap{padding:48px 0 80px}
 .doc{background:var(--paper);color:var(--paperInk);border-radius:10px;padding:40px 44px;max-width:900px;margin:0 auto}
@@ -84,6 +125,7 @@ footer{background:#0a0919;border-top:1px solid rgba(255,255,255,.06);padding:36p
 .biz span{display:inline-block;margin-right:14px}
 .copy{margin-top:14px}
 @media (max-width:860px){
+.chero{padding:84px 0 72px}.chero .wrap{grid-template-columns:1fr;gap:40px}.lineup{justify-content:flex-start}
 .menu{gap:18px}.menu a{font-size:14px}
 .hero .wrap{align-items:center;text-align:center;padding-bottom:40px}.cta{justify-content:center}
 .game,.about{grid-template-columns:1fr;gap:36px}
@@ -93,6 +135,7 @@ section.block{padding:64px 0}
 }
 @media (max-width:520px){
 .logo span{display:none}
+.tile,.tile .face{width:118px}.tile .face{height:118px;border-radius:26px}.tile:first-child{transform:none}
 .feats{grid-template-columns:1fr}
 .cards{grid-template-columns:1fr}
 .shots img{width:170px}
